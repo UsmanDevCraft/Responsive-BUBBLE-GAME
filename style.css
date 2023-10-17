@@ -1,0 +1,143 @@
+/* -------------- UNIVERSAL PADDING/MARGIN SET TO 0 -------------- */
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255,255,255,0) !important;
+    outline: none !important;
+}
+
+
+/* -------------- BODY CSS -------------- */
+body{
+    width: 100%;
+    height: 95vh;
+    background-color: #F3CF7A;
+    /* background-color: #4C0033; */
+}
+
+
+/* -------------- HEADER CSS -------------- */
+header{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+header .sentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #BE6A15;
+    /* background-color: #790252; */
+    border-radius: 0.5rem;
+}
+header .sentence a{
+    color: #6E3B3B;
+    /* color: #E80F88; */
+    text-decoration: none;
+}
+
+
+/* -------------- CONTAINER CSS -------------- */
+.container{
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 1rem;
+}
+.container .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8%;
+    width: 100%;
+    background-color: #6E3B3B;
+    /* background-color: white; */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.container .box{
+    width: 100%;
+    height: calc(100% - 8%);
+    background-color: #AC3F21;
+    /* background-color: #790252; */
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+
+/* -------------- CONTAINER TOP CSS -------------- */
+.container .top .hits, .timer, .score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #F3CF7A;
+    /* color: #4C0033; */
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.top .squares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #F3CF7A;
+    /* background-color: black; */
+    color: #6E3B3B;
+    /* color: red; */
+}
+
+
+/* -------------- CONTAINER BOX CSS -------------- */
+.box{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+.box h1{
+    color: #F3CF7A;
+    /* color: white; */
+    font-size: 60px;
+    font-weight: 500;
+}
+.box .bubble{
+    width: 3rem;
+    height: 3rem;
+    background-color: #F3CF7A;
+    /* background-color: #fff; */
+    color: #6E3B3B;
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.box .bubble:hover{
+    background-color: #6E3B3B;
+    /* background-color: #4C0033; */
+    color: #F3CF7A;
+    /* color: white; */
+    transition: 0.3s;
+}
+
+
+
+
+/* -------------- RESPONSIVENESS CSS -------------- */
+@media screen and (max-width: 560px) {
+    .container .top .hits, .timer, .score{
+        font-size: 1rem;
+    }
+    .box h1{
+        font-size: 40px;
+        letter-spacing: 0.2rem;
+    }
+}
